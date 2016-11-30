@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/*网页背景设置*/
+@-webkit-keyframes bg{
+	20%{
+		background: url(../images/15.jpg);
+		background-size: cover;
+	}
+	23%{
+		background: url(../images/16.jpg);
+		background-size: cover;
+	}
+	48%{
+		background: url(../images/16.jpg);
+		background-size: cover;
+	}
+	50%{
+		background: url(../images/14.jpg);
+		background-size: cover;
+	}
+	73%{
+		background: url(../images/14.jpg);
+		background-size: cover;
+	}
+	75%{
+		background: url(../images/31.jpg);
+		background-size: cover;
+	}
+	98%{
+		background: url(../images/31.jpg);
+		background-size: cover;
+	}
+	100%{
+		background: url(../images/15.jpg);
+		background-size: cover;
+	}
+}
+body{
+	background: url(../images/15.jpg) no-repeat;
+	background-size: cover;
+	-webkit-animation:bg 80s infinite;
+}
+/*登陆区*/
+#main{
+	width: 350px;
+	height: 600px;
+	border-top: 8px solid #70B5A8;
+	background: rgba(0,0,0,0.5);
+	margin:0;
+	margin: auto auto;
+	position: relative;
+	overflow:hidden;
+}
+/*头像区*/
+#header{
+	width: 198px;
+	height: 198px;
+	margin: 50px auto;
+	border-radius: 50%;
+	position: relative;
+}
+#header-pic{
+	width: 184px;
+	height: 184px;
+	border-radius: 50%;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	background: url(../images/11.jpg);
+	background-size: cover;
+}
+/*表单区*/
+#form{
+	width: 75%;
+	margin: 0 auto;
+	padding: 5px;
+}
+.input{
+	height: 45px;
+	line-height: 45px;
+	font-size: 0px;
+}
+.input input{
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #C99895;
+	padding: 0 5px;
+	border: none;
+	outline: none;
+	background: rgba(0,0,0,0.5);
+}
+/*按钮区*/
+.btn1{
+	display: block;
+	width: 75%;
+	height: 40px;
+	outline: none;
+	border: none;
+	color: #fff;
+	margin:0 auto;
+	margin-top: 20px;
+	font-size: 16px;		
+	font-weight: bold;
+	cursor: pointer;
+	background: #70B5A8;
+
+}
+/*底部*/
+#footer{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	bottom: 0px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+}
+#footer a{
+	color: #303537;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}

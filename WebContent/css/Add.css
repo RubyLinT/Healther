@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+.btn1{
+	display: block;
+	width: 220px;
+	height: 40px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	text-align:center;
+	line-height:40px;
+	color: #fff;
+	margin-top: 20px;
+	font-size: 16px;		
+	font-weight: bold;
+	cursor: pointer;
+	background: #70B5A8;
+}
+
+/*导航栏*/
+#nav {
+	position:relative;
+}
+#return {
+	float: right;
+	width: 100px;
+	padding-right:20px; 
+}
+
+#return a {
+	text-decoration: none;
+	color: #000;
+}
+
+/*主内容区*/
+#main {
+	height:320px;
+}
+/*左侧*/
+#main  #left{
+	width: 600px;
+	margin-left:30px;
+}
+
+#main  table {
+	width: 600px;
+	font-size:18px;
+}
+
+#main table td {
+	text-align: left;
+	line-height:40px;
+}
+
+#main table .center {
+	text-align: center;
+}
+
+#main table #ceknum {
+	border:1px solid #ccc;
+	border-radius: 5px;
+	width: 100px;
+	height:40px;
+	line-height:40px;
+	font-size: 22px;
+	letter-spacing: 0.5em;
+	text-align:center;
+	background:#CADEDA;
+}
+
+/*右侧*/
+#main #right {
+	float: left;
+	width: 250px;
+	margin-left:30px;
+	font-size:18px;
+}
+
+#main #right a {
+	color:#fff;
+}
+#main #right a:hover {
+	text-decoration: none;
+}

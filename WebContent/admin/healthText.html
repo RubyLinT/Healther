@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+	#box {
+		width: 900px;
+		border:2px solid #70B5A8;
+		border-radius: 5px;
+		margin: 0 auto;
+		padding-left: 10px;
+		overflow: hidden;
+	}
+	h1 {
+		color:#70B5A8;
+		text-align: center;
+	}
+	#sub {
+		width: 80px;
+		height: 30px;
+		background: #70B5A8;
+		border-radius: 10px;
+		text-align: center;
+		line-height: 30px;
+		font-weight: bold;
+		margin: 10px auto;
+	}
+</style>
+</head>
+<body>
+	<div id="box">
+		<h1>体质评估表</h1>
+		<h3>1.闭眼单脚站立:</h3>
+		<input type="radio" value="10" name="stand">1分钟以上
+		<input type="radio" value="8" name="stand">40秒以上
+		<input type="radio" value="5" name="stand">30秒以上
+		<input type="radio" value="3" name="stand">15秒以上
+		<input type="radio" value="1" name="stand">5秒以上
+		<br>
+		<h3>2.爬楼（选爬18层以上的楼房，以1秒一阶的速度向上攀）:</h3>
+		<input type="radio" value="10" name="step">没有累的感觉
+		<input type="radio" value="8" name="step">略微脚酸呼吸变化不大
+		<input type="radio" value="5" name="step">明显心跳加快呼吸变化大
+		<input type="radio" value="3" name="step">途中有明显走不动的感觉
+		<input type="radio" value="1" name="step">途中有明显的间断休息
+		<br>
+		<h3>3.每周锻炼的次数:</h3>
+		<input type="radio" value="10" name="exam">有两次1小时的活动
+		<input type="radio" value="8" name="exam">有一次1小时的活动
+		<input type="radio" value="5" name="exam">累计1小时的活动
+		<input type="radio" value="3" name="exam">有不到1小时的活动
+		<input type="radio" value="1" name="exam">只有简单的动一动
+		<br>
+		<h3>4.近期的精力 :</h3>
+		<input type="radio" value="10" name="rest">自我感觉不错
+		<input type="radio" value="8" name="rest">自我感觉还可以
+		<input type="radio" value="5" name="rest">一般
+		<input type="radio" value="3" name="rest">不太好
+		<input type="radio" value="1" name="rest">不行了
+		<br>
+		<h3>5.最慢的速度跑:</h3>
+		<input type="radio" value="10" name="run">半小时以上
+		<input type="radio" value="8" name="run">20至25分钟
+		<input type="radio" value="5" name="run">15至20分钟
+		<input type="radio" value="3" name="run">10至15分钟
+		<br>
+		<h4>参考标准：</h4>
+		<p>如果您得到45分以上，您的体质很不错；您得到40分至44分，您的体质较好；如果您的得分高于35分，您的体质一般；低于34分之下，您的体质属于较差；如果您的得分不足20分的话，您的身体体质问题就太大了。</p>
+		<div id="sub">
+			<a href="javascript:;">提交</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		window.onload = function() {
+			var sub = document.getElementById('sub');
+			sub.onclick = function() {
+				var rightContent = window.parent.document.getElementById('right-content');
+				var iframe = rightContent.firstElementChild;
+				iframe.setAttribute('src','healthDate.html');
+			}
+		}
+	</script>
+</body>
+</html>

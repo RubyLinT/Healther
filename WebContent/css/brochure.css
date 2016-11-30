@@ -1,0 +1,1044 @@
+@charset "utf-8";
+/*统一设置*/
+*{
+	margin: 0;
+	padding:0;
+}
+
+html,body {
+	height: 100%;
+}
+
+ul,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+@-webkit-keyframes move{
+	25%{
+		transform:rotate(-10deg) ;
+	}	
+	75%{
+		transform:rotate(10deg) ;
+	}
+	100%{
+		transform:rotate(0deg) ;
+	}
+}
+
+@-webkit-keyframes font{
+	25%{
+		font-size: 24px;
+	}	
+	75%{
+		font-size: 20px;
+	}
+	100%{
+		font-size: 18px;
+	}
+}
+
+/*马上加入我们*/
+#add:hover {
+	background: #EB3B43;
+}
+.add-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: #FF5A62;
+	width: 200px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 50px;
+	z-index: 999999;
+	-webkit-animation:move 1s infinite;
+}
+.add-bottom {
+	background: #FF5A62;
+	width: 100%;
+	height: 80px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 80px;
+}
+.font {
+	-webkit-animation:font 1s infinite;
+}
+/*首页*/
+
+#index {
+	width: 100%;
+	min-height: 100%;
+	padding-bottom: 20px;
+	overflow: hidden;
+	background: url(../images/15.jpg) no-repeat;
+	background-size: cover;
+}
+
+#downTool {
+	position: fixed;
+	bottom: 30px;
+	left:50%;
+	margin-left: -22px;
+	animation:jump 0.5s linear infinite alternate;
+	-webkit-animation:jump 0.5s linear infinite alternate;
+	z-index: 9999;
+}
+
+/*logo开始*/
+#logo {
+	width: 580px;
+	height: 80px;
+	margin:0 auto;
+	margin-top: 100px;
+	background: url(../images/logo2.png) no-repeat;
+}
+
+#logo h1 {
+	text-align: right;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 50px;
+	color:  rgb(31,151,128);
+	text-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+/*图标开始*/
+#lead-container {
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+}
+.lead {
+	width: 150px;
+	height:200px;
+	float: left;
+	background: rgb(230,242,240);
+	margin-left:40px;
+	margin-top: 20px;
+	/*参数：水平偏移 垂直偏移 模糊度 延伸 阴影颜色*/
+	box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+
+.lead:hover .icon {
+	background: rgb(31,151,128);
+}
+
+.lead:hover .font-container {
+	color: rgb(31,151,128);
+}
+.icon-container {
+	width: 100%;
+	height: 60%;
+	margin-top: 5px;
+}
+
+.icon-container .icon{
+	display: block;
+	width: 120px;
+	height: 120px;
+	background: rgb(112,181,168);
+	font-size: 60px;
+	margin-left: 15px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 120px;
+	float: left;
+	color: #fff;
+}
+
+.font-container {
+	width: 100%;
+	height: 40%;
+	text-align: center;
+	line-height: 80px;
+	color: rgb(112,181,168);
+}
+/*主内容*/
+.wrapper {
+	width: 100%;
+	min-height: 300px;
+}
+
+/*导航栏*/
+.nav-wrap {
+	width: 100%;
+	height: 107px;
+	position: relative;
+	background: url(../images/nav_wrap_bg.png) repeat-x;
+	background-size: 100% 100%;
+	z-index: 9999;
+}
+
+/*导航条固定*/
+.nav-wrap.fixed {
+	position: fixed;
+	top: 0;
+}
+
+.nav-wrap .nav li {
+	float: left;
+	border-right: 1px solid #e3e5e6;
+	width: 16.6%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.nav-wrap .nav li a {
+	display: block;
+	color: rgb(31,151,128);
+	font-size: 32px;
+}
+
+.active{
+	background: rgb(230,242,240);
+}
+
+.nav-wrap .nav li a i {
+	font-style: normal;
+}
+
+.post {
+	width: 100%;
+	min-height: 600px;
+	overflow: hidden;
+	box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.3);
+}
+
+/*健康管理开始*/
+.health-post {
+	background: rgb(230,242,240);
+	padding-bottom: 10px;
+}
+
+#left-cav {
+	width: 40%;
+	height: 600px;
+	margin-top: 40px;
+	float: left;
+}
+
+.health-post #left-cav {
+	background: url(../images/tuxing.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.right-text {
+	width: 50%;
+	height: 500px;
+	float: left;
+	margin-top: 150px;
+	margin-left: 100px;
+}
+
+.font-hl {
+	color: rgb(31,151,128);
+	font-size: 45px;
+	padding-left: 50px;
+}
+
+.wrapper h1 {
+	padding-left: 50px;
+	height: 45px;
+	color: #0CB08F;
+}
+
+.wrapper p {
+	line-height: 200%;
+	padding: 40px 0 0 10px;
+	font-size: 20px;
+	color: #414b54;
+}
+
+/*就医导航开始*/
+.hospital-post {
+	background: #DAEFFD;
+	margin-top: 10px;
+}
+
+.hospital-post #left-cav{
+	width: 30%;
+}
+.hospital-post  h1 {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.hospital-post .right-text{
+	width: 68%;
+	margin: 50px 5px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.ill-container {
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+.left-item{
+	width: 40%;
+	height: 100%;
+	transition:all 1s;
+	float: left;
+}
+.right-item {
+	width: 60%;
+	height: 100%;
+	transition:all 1s;
+	float: right;
+}
+.t1 {
+	background: url(../images/h4.jpg) no-repeat -50px 0px;
+	background-size: cover;
+}
+
+.t2 {
+	background: url(../images/h2.jpg) no-repeat -5px 0px;
+	background-size: cover;
+}
+.t3 {
+	background: url(../images/h6.jpg) no-repeat -5px 0px;
+	background-size: cover;
+}
+.t4 {
+	background: url(../images/h1.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.t5 {
+	background: url(../images/h9.jpg) no-repeat -50px 0px;
+	background-size: cover;
+}
+.t6 {
+	background: url(../images/h8.jpg) no-repeat -50px 0px;
+	background-size: cover;
+}
+.t7 {
+	background: url(../images/h7.jpg) no-repeat -50px 0px;
+	background-size: cover;
+}
+.t8 {
+	background: url(../images/h3.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+
+.left-item:hover {
+	width: 60%;
+}
+.left-item:hover+.right-item  {
+	width:40%;
+}
+
+/*疾病方案开始*/
+.illness-post {
+	background: rgba(228, 240, 192, 0.66);
+	margin-top: 10px;
+}
+
+.illness-post #left-cav {
+	background: url(../images/33.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.illness-post #left-cav{
+	width: 50%;
+}
+
+.illness-post .right-text{
+	width: 40%;
+	margin-left: 40px;
+}
+
+/*个性养身开始*/
+.cool-post {
+	background: #DAEFFD;
+	margin-top: 10px;
+}
+
+.cool-post #left-cav{
+	width: 30%;
+}
+.cool-post  h1 {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.cool-post .right-text{
+	width: 68%;
+	margin: 50px 5px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+.b1 {
+	background: url(../images/yundong5.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+
+.b2 {
+	background: url(../images/chun2.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.b3 {
+	background: url(../images/eat.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.b4 {
+	background: url(../images/xia2.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.b5 {
+	background: url(../images/qiu2.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.b6 {
+	background: url(../images/tuina.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.b7 {
+	background: url(../images/dong1.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.b8 {
+	background: url(../images/fruit1.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+
+/*医界新闻开始*/
+.news-post {
+	background: #DAEFFD;
+	margin-top: 10px;
+}
+
+.news-post #left-cav{
+	width: 30%;
+}
+.news-post  h1 {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.news-post .right-text{
+	width: 68%;
+	margin: 50px 5px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+.n1 {
+	background: url(../images/news.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+
+.n2 {
+	background: url(../images/news2.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.n3 {
+	background: url(../images/news9.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.n4 {
+	background: url(../images/news4.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.n5 {
+	background: url(../images/news5.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.n6 {
+	background: url(../images/news6.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.n7 {
+	background: url(../images/news7.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.n8 {
+	background: url(../images/news8.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+
+
+/*健康知识开始*/
+.konwlege-post {
+	background: #E4F0C0;
+	background-size: 100% 100%;
+	margin-top: 10px;
+	position: relative;
+	height: 750px;
+	box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.3);
+}
+
+.konwlege-post .top-box {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 200px;
+}
+
+.konwlege-post .top-box h1 {
+	padding-left: 50px;
+	height: 45px;
+	color: #0CB08F;
+	margin-top: 20px;
+}
+
+.wrapper p {
+	line-height: 200%;
+	font-size: 20px;
+	color: #414b54;
+}
+
+.konwlege-post .buttom-box {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 200px;
+}
+
+.konwlege-post .buttom-box img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.konwlege-post .buttom-box .air {
+	position: absolute;	
+	width: 120px;
+	height: 120px;
+	border: 2px solid #69D1BC;
+	border-radius: 50%;	
+	background-size: cover;
+}
+
+.konwlege-post .buttom-box .small-air {
+	position: absolute;	
+	border: 1px solid #69D1BC;
+	border-radius: 50%;	
+	background-size: cover;
+}
+
+.small-air1{
+	width: 10px;
+	height: 10px;	
+	top:0px;
+	left:50%;
+}
+
+.small-air2{
+	width: 20px;
+	height: 20px;
+	top:-10%;
+	left:60%;
+}
+
+.small-air3{
+	width: 30px;
+	height: 30px;
+	top:-40%;
+	left:55%;
+}
+
+
+.air1 {
+	background: url(../images/5.jpg) no-repeat 0px 0px;
+	top:-170%;
+	left:50%;
+}
+
+.air2 {
+	background: url(../images/14.jpg) no-repeat -20px 0px;
+	top:-70%;
+	left:30%;
+}
+.air3 {
+	background: url(../images/1.jpg) no-repeat -20px 0px;
+	top:-70%;
+	left:65%;
+}
+.air4 {
+	background: url(../images/7.jpg) no-repeat -20px 0px;
+	top:-200%;
+	left:75%;
+}
+/*判断视口的显示宽度如果0~340之间，单独设置一个样式*/
+@media only screen and (min-width:0px) and (max-width:410px){
+	.add-top {
+		width: 100px;
+		font-size: 14px;
+	}
+	.lead {
+		width: 260px;
+		height: 300px;
+	}
+	.icon-container {
+		height: 75%;
+	}
+	.icon-container .icon {
+		width: 200px;
+		height: 200px;
+		line-height: 200px;
+		font-size: 100px;
+		margin-left: 30px;
+	}
+	.font-container {
+		line-height: 30px;
+	}
+	#downTool {
+		display:none;
+	}
+	#logo {
+		width: 150px;
+	}
+	#logo h1 {
+		display: none;
+	}
+
+	.nav-wrap {
+		height: 64px;		
+	}
+	
+	.nav-wrap .nav {
+		height: 60px;
+	}
+
+	.nav-wrap .nav li {
+		width: 16.4%;
+	}
+
+	.nav-wrap .nav li {
+		height: 60px;
+		line-height: 60px;
+	}
+	.nav-wrap .nav li a i {
+		display: none;
+	}
+	/*健康管理*/
+	.post {
+		min-height: 600px;
+	}
+	#left-cav {
+		height: 300px;
+		width: 100%;
+	}
+	.hospital-post #left-cav{
+		height: 300px;
+		width: 100%;
+	}
+	.cool-post #left-cav{
+		height: 300px;
+		width: 100%;
+	}
+	.news-post #left-cav{
+		height: 300px;
+		width: 100%;
+	}
+	.illness-post #left-cav{
+		width: 100%;
+	}
+	.right-text {
+		width: 90%;
+		height: 100px;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.hospital-post .right-text{
+		margin: 20px 5px;
+		height: 600px;
+		width: 97%;
+	}
+	.cool-post .right-text{
+		margin: 20px 5px;
+		height: 600px;
+		width: 97%;
+	}
+	.news-post .right-text{
+		margin: 20px 5px;
+		height: 600px;
+		width: 97%;
+	}
+	.illness-post .right-text{
+		width: 97%;
+	}
+	.ill-container {
+		width: 100%;
+		height: 150px;
+	}
+	.font-hl {
+		font-size: 35px;
+		padding-left: 40px;
+	}
+	.wrapper h1 {
+		padding-left: 10px;
+		font-size: 20px;
+		height: 40px;
+	}
+	.wrapper p {
+		font-size: 14px;
+	}
+	.hospital-post  h1 {
+		margin-left: 100px;
+		font-size: 22px;
+		height: 20px;
+	}
+	.hospital-post .font-hl {
+		font-size: 35px;
+		margin-left:138px; 
+	}
+	.hospital-post #left-cav p {
+		font-size: 16px;
+		padding: 20px 0 0 20px;
+	}
+	.cool-post  h1 {
+		margin-left: 100px;
+		font-size: 22px;
+		height: 20px;
+	}
+	.cool-post .font-hl {
+		font-size: 35px;
+		margin-left:138px; 
+	}
+	.cool-post #left-cav p {
+		font-size: 16px;
+		padding: 20px 0 0 20px;
+	}
+	.news-post  h1 {
+		margin-left: 100px;
+		font-size: 22px;
+		height: 20px;
+	}
+	.news-post .font-hl {
+		font-size: 35px;
+		margin-left:138px; 
+	}
+	.news-post #left-cav p {
+		font-size: 16px;
+		padding: 20px 0 0 20px;
+	}	
+	.konwlege-post {
+		height: 600px;
+	}
+	.konwlege-post .buttom-box {
+		height: 100px;
+	}
+	.konwlege-post .buttom-box .air {
+		width: 70px;
+		height: 70px;
+	}
+
+	.small-air1{
+		width: 5px;
+		height: 5px;	
+		top:0px;
+		left:40%;
+	}
+
+	.small-air2{
+		width: 10px;
+		height: 10px;
+		top:-50%;
+		left:40%;
+	}
+
+	.small-air3{
+		width: 15px;
+		height: 15px;
+		top:-40%;
+		left:50%;
+	}
+
+	.air1 {
+		top:-140%;
+		left:40%;
+	}
+
+	.air2 {
+		top:-50%;
+		left:20%;
+	}
+	.air3 {
+		top:-70%;
+		left:65%;
+	}
+	.air4 {
+		top:-170%;
+		left:75%;
+	}
+}
+@media only screen and (min-width:411px) and (max-width:640px){
+	.lead {
+		width: 200px;
+		height: 250px;
+	}
+	.icon-container .icon {
+		width: 160px;
+		height: 160px;
+		font-size: 80px;
+		line-height: 160px;
+	}
+	.font-container {
+		width: 190px;
+		line-height: 80px;
+	}
+	#downTool {
+		display:none;
+	}
+	#logo {
+		width: 400px;
+	}
+	#logo h1 {
+		font-size: 30px;
+	}
+	.nav-wrap .nav li a i {
+		display: none;
+	}
+	/*健康管理*/
+	.post {
+		min-height: 400px;
+	}
+	#left-cav {
+		height: 450px;
+		width: 100%;
+	}
+	.hospital-post #left-cav{
+		height: 250px;
+		width: 100%;
+	}
+	.cool-post #left-cav{
+		height: 250px;
+		width: 100%;
+	}
+	.news-post #left-cav{
+		height: 250px;
+		width: 100%;
+	}
+	.illness-post #left-cav{
+		width: 100%;
+	}
+	.right-text {
+		width: 90%;
+		height: 200px;
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+	.hospital-post .right-text{
+		height: 1000px;
+		width: 97%;
+	}
+	.cool-post .right-text{
+		height: 1000px;
+		width: 97%;
+	}
+	.news-post .right-text{
+		height: 1000px;
+		width: 97%;
+	}
+	.illness-post .right-text{
+		width: 97%;
+	}
+	.ill-container {
+		width: 100%;
+		height: 250px;
+	}
+	.font-hl {
+		font-size: 35px;
+		padding-left:20px; 
+	}
+	.wrapper h1 {
+		padding-left: 25px;
+		font-size: 20px;
+		height: 50px;
+	}
+	.wrapper p {
+		font-size: 14px;
+		padding: 10px 0;
+	}
+	.hospital-post  h1 {
+		margin-left: 170px;
+		font-size: 22px;
+		height: 20px;
+	}
+	.hospital-post .font-hl {
+		font-size: 35px;
+		margin-left:223px; 
+	}
+	.hospital-post #left-cav p {
+		font-size: 16px;
+		padding: 20px 0 0 100px;
+	}
+	.cool-post  h1 {
+		margin-left: 170px;
+		font-size: 22px;
+		height: 20px;
+	}
+	.cool-post .font-hl {
+		font-size: 35px;
+		margin-left:223px; 
+	}
+	.cool-post #left-cav p {
+		font-size: 16px;
+		padding: 20px 0 0 100px;
+	}
+	.news-post  h1 {
+		margin-left: 170px;
+		font-size: 22px;
+		height: 20px;
+	}
+	.news-post .font-hl {
+		font-size: 35px;
+		margin-left:223px; 
+	}
+	.news-post #left-cav p {
+		font-size: 16px;
+		padding: 20px 0 0 100px;
+	}
+	.konwlege-post {
+		height: 600px;
+	}
+	.konwlege-post .buttom-box {
+		height: 120px;
+	}
+	.konwlege-post .buttom-box .air {
+		width: 90px;
+		height: 90px;
+	}
+
+	.small-air1{
+		width: 10px;
+		height: 10px;	
+		top:0px;
+		left:45%;
+	}
+
+	.small-air2{
+		width: 15px;
+		height: 15px;
+		top:-50%;
+		left:50%;
+	}
+
+	.small-air3{
+		width: 25px;
+		height: 25px;
+		top:-35%;
+		left:60%;
+	}
+
+	.air1 {
+		top:-150%;
+		left:40%;
+	}
+
+	.air2 {
+		top:-50%;
+		left:20%;
+	}
+	.air3 {
+		top:-70%;
+		left:70%;
+	}
+	.air4 {
+		top:-170%;
+		left:75%;
+	}
+}
+@media only screen and (min-width:641px) and (max-width:1010px){
+	.nav-wrap .nav li a {
+		font-size: 20px;
+	}
+}
+@media only screen and (min-width:1270px){
+	#health-lead {
+		margin-left: 150px;
+	}
+}
+
+@media only screen and (min-width:641px) and (max-width:1029px){
+	.post {
+		min-height: 400px;
+	}
+	#left-cav {
+		height: 340px;
+	}
+	.right-text {
+		margin-left: 10px;
+		margin-top: 80px;
+		height: 300px;
+	}
+	.font-hl {
+		font-size: 35px;
+		padding-left:20px; 
+	}
+	.wrapper h1 {
+		padding-left: 25px;
+		font-size: 20px;
+		height: 40px;
+	}
+	.wrapper p {
+		font-size: 14px;
+		padding: 20px 0 0 5px;
+	}
+	.konwlege-post .buttom-box {
+		height: 150px;
+	}
+}
+
+@media only screen and (min-width:1030px) and (max-width:1280px){
+	.post {
+		min-height: 300px;
+	}
+	#left-cav {
+		height: 450px;
+	}
+	.right-text {
+		margin-left: 50px;
+		margin-top: 100px;
+		height: 400px;
+	}		
+	.font-hl {
+		font-size: 40px;
+	}
+	.wrapper h1 {
+		font-size: 26px;
+		height: 60px;
+	}
+	.wrapper p {
+		font-size: 16px;
+	}
+	.nav-wrap .nav li {
+		width: 16.57%;
+	}
+	.konwlege-post .buttom-box {
+		height: 170px;
+	}
+}
+
+@media only screen and (min-width:411px) and (max-width:640px){
+	.nav-wrap .nav li {
+		width: 16.45%;
+	}
+}
+@media only screen and (min-width:641px) and (max-width:725px){
+	.nav-wrap .nav li {
+		width: 16.53%;
+	}
+}
+
+@media only screen and (min-width:726px) and (max-width:875px){
+	.nav-wrap .nav li {
+		width: 16.55%;
+	}
+}
+@media only screen and (min-width:876px) and (max-width:1280px){
+	.nav-wrap .nav li {
+		width: 16.57%;
+	}
+}

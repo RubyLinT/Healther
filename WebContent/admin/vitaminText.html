@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+	#box {
+		width: 900px;
+		border:2px solid #70B5A8;
+		border-radius: 5px;
+		margin: 0 auto;
+		padding-left: 10px;
+		overflow: hidden;
+	}
+	h1 {
+		color:#70B5A8;
+		text-align: center;
+	}
+	#sub {
+		width: 80px;
+		height: 30px;
+		background: #70B5A8;
+		border-radius: 10px;
+		text-align: center;
+		line-height: 30px;
+		font-weight: bold;
+		margin: 10px auto;
+	}
+</style>
+</head>
+<body>
+	<div id="box">
+		<h1>营养评估表</h1>
+		<h3>1.维生素A:</h3>
+		<input type="checkbox" name="VA" value="1">口腔溃疡
+		<input type="checkbox" name="VA" value="1">夜视力能力欠佳
+		<input type="checkbox" name="VA" value="1">痤疮
+		<input type="checkbox" name="VA" value="2">频繁感冒或被感染
+		<input type="checkbox" name="VA" value="2">皮肤干燥、脱皮
+		<input type="checkbox" name="VA" value="1">头皮屑
+		<input type="checkbox" name="VA" value="1">鹅口疮或膀胱炎
+		<input type="checkbox" name="VA" value="1">腹泻
+		<br>
+		<h3>2.维生素D:</h3>
+		<input type="checkbox" name="VD" value="1">关节炎或骨质增生
+		<input type="checkbox" name="VD" value="1">背部疼痛 
+		<input type="checkbox" name="VD" value="1">蛀牙
+		<input type="checkbox" name="VD" value="1">头发脱落
+		<input type="checkbox" name="VD" value="2">肌肉颤搐或痉挛 
+		<input type="checkbox" name="VD" value="2">关节疼痛或僵硬
+		<input type="checkbox" name="VD" value="1">脆骨
+		<br>
+		<h3>3.维生素E:</h3>
+		<input type="checkbox" name="VE" value="2">轻微锻炼便精疲力竭 
+		<input type="checkbox" name="VE" value="2">容易瘀伤
+		<input type="checkbox" name="VE" value="1">伤口复原缓慢
+		<input type="checkbox" name="VE" value="1">静脉曲张
+		<input type="checkbox" name="VE" value="1">皮肤弹性欠佳 
+		<input type="checkbox" name="VE" value="1">肌肉失去韧性
+		<br>
+		<h3>4.维生素C:</h3>
+		<input type="checkbox" name="VC" value="2">频繁感冒 
+		<input type="checkbox" name="VC" value="2">频繁被感染
+		<input type="checkbox" name="VC" value="1">精力缺乏
+		<input type="checkbox" name="VC" value="1">牙龈出血或牙龈过敏
+		<input type="checkbox" name="VC" value="1">容易瘀伤
+		<input type="checkbox" name="VC" value="1">流鼻血
+		<input type="checkbox" name="VC" value="1">伤口复原缓慢
+		<input type="checkbox" name="VC" value="1">皮肤出现红色丘疹
+		<br>
+		<h3>5.维生素B1:</h3>
+		<input type="checkbox" name="VB1" value="1">肌肉松驰
+		<input type="checkbox" name="VB1" value="1">眼部酸痛
+		<input type="checkbox" name="VB1" value="1">易怒
+		<input type="checkbox" name="VB1" value="1">注意力不集中
+		<input type="checkbox" name="VB1" value="1">脚部刺痛
+		<input type="checkbox" name="VB1" value="1">记忆力欠佳
+		<input type="checkbox" name="VB1" value="1">胃痛
+		<input type="checkbox" name="VB1" value="1">便秘 
+		<input type="checkbox" name="VB1" value="1">手部刺痛
+		<input type="checkbox" name="VB1" value="1">心跳过速
+		<br>
+		<h3>6.维生素B2:</h3>
+		<input type="checkbox" name="VB2" value="1">眼睛充血、眼部灼痛或沙眼
+		<input type="checkbox" name="VB2" value="1">对亮光敏感
+		<input type="checkbox" name="VB2" value="1">咽喉痛
+		<input type="checkbox" name="VB2" value="1">白内障
+		<input type="checkbox" name="VB2" value="1">头发干枯或油脂分泌过剩
+		<input type="checkbox" name="VB2" value="1">湿疹或皮炎
+		<input type="checkbox" name="VB2" value="1">指甲开裂
+		<input type="checkbox" name="VB2" value="1">嘴唇干裂 
+		<br>
+		<h3>7.维生素B3（烟酸）:</h3>
+		<input type="checkbox" name="VB3" value="1">精力缺乏
+		<input type="checkbox" name="VB3" value="1">腹泻
+		<input type="checkbox" name="VB3" value="1">失眠
+		<input type="checkbox" name="VB3" value="1">头痛或偏头痛
+		<input type="checkbox" name="VB3" value="1">记忆力欠佳
+		<input type="checkbox" name="VB3" value="1">忧虑或紧张
+		<input type="checkbox" name="VB3" value="1">抑郁
+		<input type="checkbox" name="VB3" value="1">易怒 
+		<input type="checkbox" name="VB3" value="1">牙龈出血或牙龈过敏
+		<input type="checkbox" name="VB3" value="1">痤疮
+		<br>
+		<h4>参考标准：</h4>
+		<p>
+			一、症状分析  对于您经常出现的症状，一种症状得1分，许多症状可能出现不止一次，因为这些症状可能是许多营养物质缺乏共同作用造成的结果。如果您出现过黑色字体标注的症状，得2分，每种营养成分的最高得分是10分，得分越高，说明这种营养成分缺乏越多，每种营养成分的得分填入方框。 
+			维生素状况 
+		</p>
+		<div id="sub">
+			<a href="javascript:;">提交</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		window.onload = function() {
+			var sub = document.getElementById('sub');
+			sub.onclick = function() {
+				var rightContent = window.parent.document.getElementById('right-content');
+				var iframe = rightContent.firstElementChild;
+				iframe.setAttribute('src','healthDate.html');
+			}
+		}
+	</script>
+</body>
+</html>
