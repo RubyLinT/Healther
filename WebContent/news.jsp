@@ -1,20 +1,29 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@page import="com.org.serviceImp.UserServiceImp"%>
+    <%@page import="com.org.domain.User"%>
+    <%@page import="java.util.Map"%>
+    <%
+      String id = request.getParameter("id");
+    %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>医界新闻</title>
-<link rel="stylesheet" href="../dist/css/swiper.min.css">
-<link rel="stylesheet" href="../css/font.css">
-<link rel="stylesheet" type="text/css" href="../css/reset.css">
-<link rel="stylesheet" type="text/css" href="../css/news.css">
+<link rel="stylesheet" href="dist/css/swiper.min.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/news.css">
 </head>
 <body>
-<!-- 导航栏开始 -->
+	<!-- 导航栏开始 -->
   <div id="nav">
     <div class="wrapper">
       <!-- 左边logo图片开始 -->
       <div class="logo">
-   <img src="../images/logo.png">
+   <img src="images/logo.png">
 	</div>
       <!-- 左边logo图片结束 -->
       <!-- 中间导航开始 -->
@@ -23,8 +32,8 @@
           <li id="news"><a href="#"><span class="icon-newspaper"></span>&nbsp;医界新闻&nbsp;&nbsp;</a>|</li>
           <li id="preserve"><a href="#"><span class="icon-cool"></span>&nbsp;个性养生&nbsp;&nbsp;</a>|</li>
           <li id="hos-doc"><a href="#"><span class="icon-bubble2"></span>&nbsp;就医导航&nbsp;&nbsp;</a>|</li>
-          <li id="konwledge"><a href="knowledge.html"><span class="icon-book"></span>&nbsp;健康知识&nbsp;&nbsp;</a>|</li>
-          <li id="illness"><a href="history.html"><span class="icon-profile"></span>&nbsp;朕的历史</a></li>
+          <li id="konwledge"><a href="admin/knowledge.html?"><span class="icon-book"></span>&nbsp;健康知识&nbsp;&nbsp;</a>|</li>
+          <li id="illness"><a href="history.jsp?id=<%=id%>"><span class="icon-profile"></span>&nbsp;朕的历史</a></li>
         </ul>
       </div>
       <!-- 中间导航结束 -->
@@ -64,16 +73,16 @@
        <!-- 滚动新闻区开始 -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="../images/31.jpg" alt=""><div class="title">张强：医生集团对一些投资说No</div></div>
-            <div class="swiper-slide"><img src="../images/14.jpg" alt=""><div class="title">鲍宇克：张强医生集团首张个人医责险投保人</div></div>
-            <div class="swiper-slide"><img src="../images/36.jpg" alt=""><div class="title">大医之道 | 蔡德培：中西医结合与青春期医学的实践者</div></div>
-            <div class="swiper-slide"><img src="../images/37.jpg" alt=""><div class="title">三位援疆医生的鲜活“画像”</div></div>
-            <div class="swiper-slide"><img src="../images/2.jpg" alt=""><div class="title">葛均波院士专访：我觉得自己比较像萧峰</div></div>
-            <div class="swiper-slide"><img src="../images/38.jpg" alt=""><div class="title">牛！董家鸿团队做了世界首例术式根治终末期肝包虫病</div></div>
-            <div class="swiper-slide"><img src="../images/39.png" alt=""><div class="title">史上最性感外科医生竟然长这样？！</div></div>
-            <div class="swiper-slide"><img src="../images/12.jpg" alt=""><div class="title">两保合一，“可报销药品”究竟如何扩容？</div></div>
-            <div class="swiper-slide"><img src="../images/27.jpg" alt=""><div class="title">锐观察 | 大病医保到底怎样回归“保大病”本位</div></div>
-            <div class="swiper-slide"><img src="../images/10.jpg" alt=""><div class="title">国家药价谈判 跨国公司怎么看中国药品定价</div></div>
+            <div class="swiper-slide"><img src="images/31.jpg" alt=""><div class="title">张强：医生集团对一些投资说No</div></div>
+            <div class="swiper-slide"><img src="images/14.jpg" alt=""><div class="title">鲍宇克：张强医生集团首张个人医责险投保人</div></div>
+            <div class="swiper-slide"><img src="images/36.jpg" alt=""><div class="title">大医之道 | 蔡德培：中西医结合与青春期医学的实践者</div></div>
+            <div class="swiper-slide"><img src="images/37.jpg" alt=""><div class="title">三位援疆医生的鲜活“画像”</div></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""><div class="title">葛均波院士专访：我觉得自己比较像萧峰</div></div>
+            <div class="swiper-slide"><img src="images/38.jpg" alt=""><div class="title">牛！董家鸿团队做了世界首例术式根治终末期肝包虫病</div></div>
+            <div class="swiper-slide"><img src="images/39.png" alt=""><div class="title">史上最性感外科医生竟然长这样？！</div></div>
+            <div class="swiper-slide"><img src="images/12.jpg" alt=""><div class="title">两保合一，“可报销药品”究竟如何扩容？</div></div>
+            <div class="swiper-slide"><img src="images/27.jpg" alt=""><div class="title">锐观察 | 大病医保到底怎样回归“保大病”本位</div></div>
+            <div class="swiper-slide"><img src="images/10.jpg" alt=""><div class="title">国家药价谈判 跨国公司怎么看中国药品定价</div></div>
         </div>
         
         <!-- Add Pagination -->
@@ -152,7 +161,7 @@
 	  <div class="news-box">
 				<div class="news-left">
 					<a href="#">
-						<img src="../images/25.jpg" alt="">
+						<img src="images/25.jpg" alt="">
 						<div class="ndetail">
 							<h4>北京人均期望寿命到底是怎么算出来的</h4>
 							<p>健康长寿，是每个人的心愿。如果有神仙，每个人都想预测一下自己到底能活多少岁——
@@ -163,7 +172,7 @@
 				</div>
 				<div class="news-list">
 					<a href="#">
-						<img src="../images/33.jpg" alt="">
+						<img src="images/33.jpg" alt="">
 						<div class="ndetail">
 							<h4>四大转变 回顾中国精神卫生十年征程</h4>
 							<p>10年来，精神卫生如何被更广泛的公众认识？精神疾病是否已经成为你我关心的健康问题？从精神疾病患者拒绝走出家门，工作人员“热脸遭遇冷屁股”，到越来越多患者得到社会关爱，其中发生了怎样的变化？</p>
@@ -172,7 +181,7 @@
 				</div>
 				<div class="news-list">
 					<a href="#">
-						<img src="../images/23.jpg" alt="">
+						<img src="images/23.jpg" alt="">
 						<div class="ndetail">
 							<h4>健康医疗信息化的五大趋势</h4>
 							<p>随着大数据、云计算、移动互联、人工智能等现代信息技术在健康医疗领域的广泛应用，健康医疗信息化对优化健康医疗资源配置、创新健康医疗服务的内容与形式产生了重要影响，已成为深化医改、推进健康中国建设的重要支撑。</p>
@@ -181,7 +190,7 @@
 				</div>
 				<div class="news-list">
 					<a href="#">
-						<img src="../images/17.jpeg" alt="">
+						<img src="images/17.jpeg" alt="">
 						<div class="ndetail">
 							<h4>光明日报呼吁“多关心中青年学者健康”</h4>
 							<p>近期，多名优秀的中青年学者突发疾病相继离世，其中不乏入选“青年千人计划”的才俊和“长江学者”特聘教授，令人扼腕叹息。</p>
@@ -190,7 +199,7 @@
 				</div>
 				<div class="news-list">
 					<a href="#">
-						<img src="../images/2.jpg" alt="">
+						<img src="images/2.jpg" alt="">
 						<div class="ndetail">
 							<h4>为了扩大医院规模 他们都在建微型医院</h4>
 							<p>医院和医疗体系谋求成长机会时，传统的增设门诊手术中心、急救站和独立急诊中心等已无法满足需求。大多日间手术中心不能提供全面服务，而综合性医院所提供的服务往往又超出社区所需。微型医院成为一个最佳选择。</p>
@@ -210,7 +219,7 @@
 	  <div class="news-box">
 				<div class="news-left">
 					<a href="#">
-						<img src="../images/13.png" alt="">
+						<img src="images/13.png" alt="">
 						<div class="ndetail">
 							<h4>告别临床 这6位医生说：从未后悔</h4>
 							<p>职场上，谁没想过辞掉工作，来一场说走就走的旅行，或是开一个小咖啡馆，岁月静好。
@@ -222,16 +231,16 @@
 				</div>
 				<div class="news-list">
 					<a href="#">
-						<img src="../images/32.jpg" alt="">
+						<img src="images/32.jpg" alt="">
 						<div class="ndetail">
-							<h4>飞利浦战略转型数字健康/h4>
+							<h4>飞利浦战略转型数字健康</h4>
 							<p>医疗大数据和互联技术迅猛发展，正带动健康关护服务升级换代。曾经以照明、电器、医疗设备等产品被全球熟知的飞利浦，目前正加大健康科技领域的投入。</p>
 						</div>
 					</a>
 				</div>
 				<div class="news-list">
 					<a href="#">
-						<img src="../images/9.jpg" alt="">
+						<img src="images/9.jpg" alt="">
 						<div class="ndetail">
 							<h4>韩春雨：已能重复实验结果</h4>
 							<p>今年5月，这位非名校的普通副教授，在国际顶级期刊《自然•生物技术》杂志发表了一篇被称为可比肩诺奖的研究成果：发明了一种新的基因编辑技术——NgAgo，向现有最时兴的CRISPR-Cas发起了挑战。</p>
@@ -240,7 +249,7 @@
 				</div>
 				<div class="news-list">
 					<a href="#">
-						<img src="../images/22.jpg" alt="">
+						<img src="images/22.jpg" alt="">
 						<div class="ndetail">
 							<h4>不可不知的常规手术“风险评估”</h4>
 							<p>近日，“医疗点评”（Healthgrades）发布了全美医院排名，同时推出了如何运用风险智能工具（Risk IQ Tool）来帮助患者对6项常规手术的风险进行自我评估。</p>
@@ -249,7 +258,7 @@
 				</div>
 				<div class="news-list">
 					<a href="#">
-						<img src="../images/3.jpg" alt="">
+						<img src="images/3.jpg" alt="">
 						<div class="ndetail">
 							<h4>当医学家开始写诗 笔尖流淌想不到的意境</h4>
 							<p>2016年的诺贝尔文学奖颁给了鲍勃•迪伦。一时间，众声喧哗，仿佛这是桩多么难以想象的事情。然而很多有才华的人，偏偏就是那么“霸道”，不但自己的专业出色，跨过界照样风生水起。鲍勃•迪伦并非特例。</p>
@@ -293,8 +302,8 @@
   <!-- 底部结束 -->
   
   <!-- Swiper JS -->
-  <script src="../dist/js/swiper.min.js"></script>
-  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script src="dist/js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
   <!-- Initialize Swiper -->
   <script>
 

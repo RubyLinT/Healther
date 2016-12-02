@@ -20,10 +20,15 @@
 /*导航栏*/
 #nav {
 	position:relative;
+	line-height:80px;
+}
+.logo {
+	text-aligin:center;
+	
 }
 #return {
 	float: right;
-	width: 100px;
+	width: 200px;
 	padding-right:20px; 
 }
 

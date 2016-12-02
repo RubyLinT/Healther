@@ -61,7 +61,7 @@ public class UserCheckLogin extends HttpServlet {
 			  session.setAttribute("cuser",uname);
 			  session.setAttribute("ucls",oneuser.get("usercls"));
 			  session.setAttribute("uid",oneuser.get("Id"));
-			  out.print("<script>location.href='admin/news.html';</script>");
+			  out.print("<script>location.href='news.jsp?id="+oneuser.get("Id")+"';</script>");
 		  }else{
 			  out.print("<script>alert('±§Ç¸£¡Ê§°Ü£¡');location.href='admin/Login.jsp';</script>");
 		  }

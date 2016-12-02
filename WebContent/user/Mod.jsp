@@ -31,8 +31,8 @@
 		<img src="../images/logo.png">
 	</div>
       <!-- logo图片结束 -->
-      <div class="logo">|注册学生健康管理平台账号</div>
-      <div id="return"><a href="#">回到主页</a></div>
+      <div class="logo">忘记密码</div>
+      <div id="return"><a href="Login.jsp">回到登录页面</a></div>
     </div>
   </div>
   <!-- 导航栏结束 -->

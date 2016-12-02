@@ -1,29 +1,38 @@
-<!doctype html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@page import="com.org.serviceImp.UserServiceImp"%>
+    <%@page import="com.org.domain.User"%>
+    <%@page import="java.util.Map"%>
+    <%
+      String id = request.getParameter("id");
+    %>
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="../css/font.css">
-  <link rel="stylesheet" type="text/css" href="../css/reset.css">
-  <link rel="stylesheet" type="text/css" href="../css/history.css">	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>朕的历史</title>
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/history.css">	
 </head>
 <body>
-  <!-- 导航栏开始 -->
+	 <!-- 导航栏开始 -->
   <div id="nav">
     <div class="wrapper">
       <!-- 左边logo图片开始 -->
       <div class="logo">
-      <img src="../images/logo.png">
+      <img src="images/logo.png">
       </div>
       <!-- 左边logo图片结束 -->
       <!-- 中间导航开始 -->
       <div class="center-nav">
         <ul>
-          <li id="news"><a href="news.html"><span class="icon-newspaper"></span>&nbsp;医界新闻&nbsp;&nbsp;</a>|</li>
+          <li id="news"><a href="news.jsp?id=<%=id%>>"><span class="icon-newspaper"></span>&nbsp;医界新闻&nbsp;&nbsp;</a>|</li>
           <li id="preserve"><a href="#"><span class="icon-cool"></span>&nbsp;个性养生&nbsp;&nbsp;</a>|</li>
           <li id="hos-doc"><a href="#"><span class="icon-bubble2"></span>&nbsp;就医导航&nbsp;&nbsp;</a>|</li>
           <li id="konwledge"><a href="knowledge.html"><span class="icon-book"></span>&nbsp;健康知识&nbsp;&nbsp;</a>|</li>
-          <li id="illness"><a href="history.html"><span class="icon-profile"></span>&nbsp;朕的历史</a></li>
+          <li id="illness"><a href="#"><span class="icon-profile"></span>&nbsp;朕的历史</a></li>
         </ul>
       </div>
       <!-- 中间导航结束 -->
@@ -56,7 +65,7 @@
     <!-- 左侧工具栏结束 -->
     <!-- 右侧内容开始 -->
     <div id="right-content">
-      <iframe id="dynamic" src="healthDate.html" width="1100" height="840" frameborder="0" scrolling="no"></iframe>
+      <iframe id="dynamic" src="healthData.jsp?id=<%=id%>" width="1100" height="840" frameborder="0" scrolling="no"></iframe>
     </div>
     <!-- 右侧内容结束 -->
   </div>
@@ -92,7 +101,7 @@
   </div>
   <!-- 底部结束 -->
   <!-- 引入jquery环境 -->
-  <script type="text/javascript" src='../js/jquery.js'></script>
+  <script type="text/javascript" src='js/jquery.js'></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $('#healthStatu').click(function(event) {

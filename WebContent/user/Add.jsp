@@ -19,7 +19,7 @@
 		<img src="../images/logo.png">
 	</div>
       <!-- logo图片结束 -->
-      <div class="logo">|注册学生健康管理平台账号</div>
+      <div class="logo">注册学生健康管理平台账号</div>
       <div id="return"><a href="../admin/Login.jsp">回到登录页</a></div>
     </div>
   </div>

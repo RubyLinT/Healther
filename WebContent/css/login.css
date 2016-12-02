@@ -85,7 +85,7 @@ body{
 	height: 40px;
 	line-height: 40px;
 	font-size: 16px;
-	color: #C99895;
+	color: #70B5A8;
 	padding: 0 5px;
 	border: none;
 	outline: none;
@@ -114,8 +114,9 @@ body{
 	line-height: 50px;
 	position: absolute;
 	bottom: 0px;
-	border-top: 1px solid #ccc;
+	border-top: 0;
 	text-align: center;
+	background:#70b5a8;
 }
 #footer a{
 	color: #303537;
